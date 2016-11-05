@@ -1,0 +1,4 @@
+1 Download Flask framework;
+2 open terminal , type python application.py
+3 open browser , url is  http://localhost:5000/input?query=arrow
+4 to change input , query = your input  at the end of url 

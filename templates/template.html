@@ -1,0 +1,13 @@
+<html>
+  <head> <b> {{query}}  </b> </head>
+  <body>
+       {% for i in  range(sz) %}
+         <p> <b> {{ i+1 }} {{ text["items"][i]["name"] }} </b> </br></p>
+         <p> <b> Created {{   text["items"][i]["created_at"]  }}  </b>   </br>  </p>
+         <p>  <img src = {{ text["items"][i]["owner"]["avatar_url"] }} alt = "owner_login " />  </br><p>
+         <p>  <b> Last Commit </b>  </br></p>
+         <p>{{ commit_dict[i]["sha"] }}  {{ commit_dict[i]["message"] }}  {{ commit_dict[i]["author_name"] }}   </br> </p>
+         <hr>
+      {% endfor %}
+  </body>
+</html>
